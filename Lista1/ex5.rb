@@ -12,19 +12,17 @@ def organizaLista(lista)
         else
             mediana = lista[(tamanho/2) + 0.5]
         end
-    print "
-    {
-    :primeiro=> #{primeiro}, 
-    :quantidade=> #{tamanho}, 
-    :ultimo=> #{ultimo}, 
-    :soma=> #{soma},
-    :media=> #{media}, 
-    :mediana=> #{mediana}, 
-    :ordenada=> #{ordenada}
+    resposta = {
+    :primeiro=> primeiro, 
+    :quantidade=> tamanho, 
+    :ultimo=> ultimo, 
+    :soma=> soma,
+    :media=> media, 
+    :mediana=> mediana, 
+    :ordenada=> ordenada
     }
-    
-    "
-    end
+    p resposta
+end
 
 organizaLista([-10, -15, -20, 10, 20, 5])
 
