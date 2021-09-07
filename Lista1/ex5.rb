@@ -12,7 +12,8 @@ def organizaLista(lista)
         else
             mediana = lista[(tamanho/2) + 0.5]
         end
-    resposta = {
+    resposta = 
+    {
     :primeiro=> primeiro, 
     :quantidade=> tamanho, 
     :ultimo=> ultimo, 
