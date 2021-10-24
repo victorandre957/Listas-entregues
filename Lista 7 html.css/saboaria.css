@@ -1,0 +1,277 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+    width: 100vw;
+    height: 2rem;
+    background: rgba(6, 115, 95, 0.75);
+    z-index: 1;
+
+}
+
+.nav-bottom{
+    margin: 0.1rem 2.5rem;
+    background: none;
+    display: flex;
+    justify-content: auto;
+}
+
+nav .nav-middle a {
+    text-decoration: none;
+    height: auto;
+    top: 3.5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px 62px;
+    margin: 0px 2.5vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav .nav-small a{
+    text-decoration: none;
+    color: #ffffff;
+    top: 3.5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    align-items: center;
+    text-align: center;
+    display: none;
+    padding: 1px 62px;
+    margin: 0px 30vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav a:hover{
+    cursor: pointer;
+    text-decoration: underline 1px;
+    background-color: rgba(8, 124, 53, 40%);
+    border-radius: 10px;
+    transition: 500ms ease;
+}
+
+nav img {
+    height: 2rem;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 1560px){
+    .nav-middle{
+        display: none;
+    }
+
+    nav .nav-small a{
+        display: inherit;
+    }
+}
+
+.product{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#sabonete{
+    position: relative;
+    background: linear-gradient(rgba(82, 143, 118, 0.45), rgba(82, 143, 118, 0.45)),url(./imagens/Sabonete.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#aromatizador{
+    position: relative;
+    background: linear-gradient(rgba(82, 143, 118, 0.45), rgba(82, 143, 118, 0.45)),url(./imagens/Aromatizador.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#vela{
+    position: relative;
+    background: linear-gradient(rgba(82, 143, 118, 0.45), rgba(82, 143, 118, 0.45)),url(./imagens/Vela.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.product .top{
+    margin-top: 20rem;
+    z-index: 2;
+}
+
+.product h1{
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    line-height: 1.4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFBD3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.product h3{
+    margin-top: -5rem;
+    font-family: Lily Script One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#sub-sabao{
+    margin-left: 14.5rem;
+}
+
+#sub-aro{
+    margin-left: 26rem;
+}
+
+#sub-vela{
+    margin-left: 7.5rem;
+}
+
+.product .content{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    min-width: 310px;
+}
+
+.product .bottom {
+    position: relative;
+    bottom: 1;
+    display: flex;
+    min-width: 310px;
+    min-height: 49px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product .bottom button{
+    border: none;
+    border-radius: 60px;
+    font-family: Lily Script One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 256px;
+    height: 49px;
+}
+
+.green{
+    padding: 0px 35px;
+    background-color: #77FF0C;
+}
+
+.yellow{
+    padding: 0px 48px;
+    background-color: #FFA217;
+}
+
+#B-sabao .green{
+    margin-top: 0.2rem;
+    margin-left: 0.6rem;
+}
+
+#B-sabao .yellow{
+    margin-top: 0.2rem;
+    margin-left: 8rem;
+    
+}
+
+#B-aro .green{
+    margin-top: 0.2rem;
+    margin-left: 9rem;
+}
+
+#B-aro .yellow{
+    margin-top: 0.2rem;
+    margin-right: 9rem;
+}
+
+#B-vela .green{
+    margin-top: 0.2rem;
+    margin-left: -14rem;
+
+}
+
+#B-vela .yellow{
+    margin-top: 0.2rem;
+    margin-right: -14.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 500ms ease;
+}
+
+
+@media only screen and (max-width: 600px){
+    .product .bottom{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+footer{
+    box-sizing: border-box;
+    position:absolute;
+    z-index: visible;
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    margin-bottom: 1.5rem;
+    display:flex;
+    justify-content: center;
+}
+
+footer .footer-content a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    font-family: Roboto;
+    margin-left: 4rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 600px){
+
+    #footer-hide{
+        display:none;
+    }
+}

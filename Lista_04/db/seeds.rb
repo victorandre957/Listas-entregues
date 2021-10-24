@@ -17,3 +17,5 @@ Student.create(name: "Marie", registration: "223651489", email: "marie99@yahoo.c
 Student.create(name: "Andreia", registration: "288866629", email: "andreia99@yahoo.com.br", birth_date: '2010-05-14', teacher_id: 1)
 Student.create(name: "Sofia", registration: "743265981", email: "sofia99@yahoo.com.br", birth_date: '2006-06-06', teacher_id: 2)
 Student.create(name: "Jason", registration: "541512625", email: "jason99@yahoo.com.br", birth_date: '2001-09-07', teacher_id: 2)
+
+Admin.create(email: "admaster99@comando.com.br", password: "admin99", name: "ADM")

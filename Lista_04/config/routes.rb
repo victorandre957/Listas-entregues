@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins, skip: :all
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   namespace 'api' do
     namespace 'v1' do
@@ -25,5 +26,11 @@ Rails.application.routes.draw do
         delete 'delete/:id', to: "students#delete"
       end
     end
+    namespace 'v2' do
+      scope 'admins' do
+        get 'login', to: 'admins#login'
+      end
+    end
   end
 end
+
